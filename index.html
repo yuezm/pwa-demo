@@ -9,5 +9,23 @@
 <body>
 
 <p>a pwa demo</p>
+
+<script>
+  const version = "0.0.1";
+  if (window.navigator.serviceWorker) {
+    window.navigator.serviceWorker.register('./sw.js', { scope: '/pwa-demo/' })
+      .then(reg => {
+        console.log('注册成功');
+        if (localStorage.getItem('pwa-version') !== version) {
+          reg.update().then(() => {
+            localStorage.setItem('pwa-version', version);
+          });
+        }
+      })
+      .catch(reason => {
+        console.log(reason);
+      });
+  }
+</script>
 </body>
 </html>

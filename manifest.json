@@ -1,0 +1,12 @@
+{
+  "short_name": "PWA-DEMO",
+  "name": "PWA测试安装DEMO",
+  "icon": [
+    {
+      "src": "./note.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    }
+  ],
+  "start_url": "./index.html"
+}

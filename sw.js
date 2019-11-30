@@ -1,6 +1,7 @@
 const self = this;
 
 self.addEventListener('fetch', event => {
+  console.log('触发请求');
   event.respondWith(
     caches.match(event.request).then(response => {
       console.log('缓存response', response);

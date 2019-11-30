@@ -17,6 +17,7 @@
       .then(reg => {
         console.log('注册成功');
         if (localStorage.getItem('pwa-version') !== version) {
+          console.log('开始更新');
           reg.update().then(() => {
             localStorage.setItem('pwa-version', version);
           });

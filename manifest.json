@@ -3,35 +3,35 @@
   "name": "PWA测试安装DEMO",
   "icons": [
     {
-      "src": "/note.png",
+      "src": "./note.png",
       "sizes": "128x128",
       "type": "image/png"
     },
     {
-      "src": "/note.png",
+      "src": "./note.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "/note.png",
+      "src": "./note.png",
       "sizes": "152x152",
       "type": "image/png"
     },
     {
-      "src": "/note.png",
+      "src": "./note.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/note.png",
+      "src": "./note.png",
       "sizes": "256x256",
       "type": "image/png"
     },
     {
-      "src": "/note.png",
+      "src": "./note.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
-  "start_url": "/index.html"
+  "start_url": "./index.html"
 }

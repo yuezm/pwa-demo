@@ -1,11 +1,36 @@
 {
   "short_name": "PWA-DEMO",
   "name": "PWA测试安装DEMO",
-  "icon": [
+  "icons": [
     {
       "src": "/note.png",
-      "type": "image/png",
-      "sizes": "48x48"
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/note.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/note.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/note.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/note.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/note.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "start_url": "/index.html"

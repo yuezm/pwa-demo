@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="manifest" href="./manifest.json">
+  <title>PWA-DEMO</title>
+  <link rel="manifest" href="/manifest.json">
 </head>
 <body>
 
 <p>a pwa demo</p>
 
 <script>
-  const version = "0.0.2";
+  const version = "0.0.3";
   if (window.navigator.serviceWorker) {
     window.navigator.serviceWorker.register('./sw.js', { scope: '/pwa-demo/' })
       .then(reg => {

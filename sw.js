@@ -1,7 +1,17 @@
 const self = this;
 
+self.addEventListener('install', () => {
+  self.skipWaiting();
+});
+
+self.addEventListener('activate', ev => {
+  console.log('Service Worker activate', ev);
+  self.clients.claim();
+});
+
 self.addEventListener('fetch', event => {
-  console.log('触发请求');
+  console.log('触发请求', event.request);
+
   event.respondWith(
     caches.match(event.request).then(response => {
       console.log('缓存response', response);

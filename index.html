@@ -6,28 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>PWA-DEMO</title>
   <link rel="manifest" href="./manifest.json">
+  <script src="./install.js"/>
 </head>
 <body>
 
 <p>a pwa demo</p>
 
 <script>
-  const version = "0.0.3";
-  if (window.navigator.serviceWorker) {
+if (window.navigator.serviceWorker) {
+  window.addEventListener('load', () => {
     window.navigator.serviceWorker.register('./sw.js', { scope: '/pwa-demo/' })
       .then(reg => {
-        console.log('注册成功');
-        if (localStorage.getItem('pwa-version') !== version) {
-          console.log('开始更新');
-          reg.update().then(() => {
-            localStorage.setItem('pwa-version', version);
-          });
-        }
+        console.log('注册成功', reg);
       })
       .catch(reason => {
         console.log(reason);
       });
-  }
+  });
+}
 </script>
 </body>
 </html>
